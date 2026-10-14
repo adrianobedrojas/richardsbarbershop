@@ -18,9 +18,15 @@ export const shop = {
     { day: "Sunday", time: "Closed" },
   ],
   services: [
-    { title: "Signature Haircut", detail: "A fresh style tailored to you." },
-    { title: "Beard Trim", detail: "Clean lines and finishing touches." },
-    { title: "Haircut + Beard", detail: "The full refresh in one visit." },
+    { title: "Beard Trim And Shave", price: 25, duration: "1 hr" },
+    { title: "Edge up", price: 20, duration: "30 mins" },
+    { title: "Facial Waxing", price: 20, duration: "30 mins" },
+    { title: "Haircut", price: 35, duration: "1 hr" },
+    { title: "Kids haircuts", price: 25, duration: "1 hr" },
+    { title: "Men's Haircut", price: 35, duration: "30 mins" },
+    { title: "Mens Hair Cut And Beard", price: 50, duration: "1 hr" },
+    { title: "Pedram", price: 100, duration: "2 hrs" },
+    { title: "Women's Haircut", price: 30, duration: "1 hr" },
   ],
   // Original photos and videos already uploaded to this GitHub repository.
   // Verify the portfolio photos before publishing and replace generic alt text with descriptive captions.
