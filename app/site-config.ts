@@ -6,7 +6,7 @@ export const shop = {
   barberName: "Richard",
   address: "",
   city: "",
-  phone: "", // Example: "+12105550123" (international format, no spaces).
+  phone: "+12105502690", // Richard\'s business contact number.
   // Richard Garcia's repeating schedule; confirm these are also the shop's public hours.
   hours: [
     { day: "Monday", time: "10:00 AM – 3:00 PM" },
