@@ -30,10 +30,10 @@ export const shop = {
   ],
   // Original photos and videos already uploaded to this GitHub repository.
   // Verify the portfolio photos before publishing and replace generic alt text with descriptive captions.
+  logo: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/49129.jpg", // Confirm this is the intended logo artwork.
   photos: [
     { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/48962.jpg", alt: "Richard's Barbershop portfolio photo 1" },
     { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/48963.png", alt: "Richard's Barbershop portfolio photo 2" },
-    { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/49129.jpg", alt: "Richard's Barbershop portfolio photo 3" },
     { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/IMG_20261013_214149.jpg", alt: "Richard's Barbershop portfolio photo 4" },
     { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/IMG_20261013_214151.jpg", alt: "Richard's Barbershop portfolio photo 5" },
     { src: "https://raw.githubusercontent.com/adrianobedrojas/richardsbarbershop/main/IMG_20261013_214153.jpg", alt: "Richard's Barbershop portfolio photo 6" },
