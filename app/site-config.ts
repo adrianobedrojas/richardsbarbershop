@@ -21,7 +21,6 @@ export const shop = {
     { title: "Beard Trim And Shave", price: 25, duration: "1 hr" },
     { title: "Edge up", price: 20, duration: "30 mins" },
     { title: "Facial Waxing", price: 20, duration: "30 mins" },
-    { title: "Haircut", price: 35, duration: "1 hr" },
     { title: "Kids haircuts", price: 25, duration: "1 hr" },
     { title: "Men's Haircut", price: 35, duration: "30 mins" },
     { title: "Mens Hair Cut And Beard", price: 50, duration: "1 hr" },
