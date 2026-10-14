@@ -5,6 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: { google: "t28OC2seeE3nVLFsd8kbzZovjDwyMt5E4UagN0uhEXA" },
   title: siteTitle,
   description: siteDescription,
   alternates: { canonical: "/" },
