@@ -1,6 +1,6 @@
 import { shop } from "./site-config";
 
-export const siteUrl = "https://richardsbarbershop.com";
+export const siteUrl = "https://www.richardsbarbershop.com";
 export const siteTitle = "Richard's Barbershop | San Antonio, TX";
 export const siteDescription = "Book haircuts, beard trims, shaves, and perms at Richard's Barbershop, 8494 Fredericksburg Rd in San Antonio, TX. View prices and book online.";
 
