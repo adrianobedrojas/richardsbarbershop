@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { shop } from "./site-config";
+import { businessSchema } from "./seo";
 
 const bookingUrl = "https://app.squareup.com/appointments/book/fbad4c9c-1bf3-4a36-b972-5e5f24c921aa/3R3ZA6VY8GN9Q/start";
 const phoneDigits = shop.phone.replace(/[^\d+]/g, "");
@@ -11,6 +12,7 @@ const smsUrl = phoneDigits ? `sms:${phoneDigits}` : "";
 export default function Home() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema).replace(/</g, "\\u003c") }} />
       <header className="site-header">
         <a className="wordmark" href="#home">{shop.name}<span className="wordmark-dot">.</span></a>
         <nav aria-label="Main navigation">
@@ -28,7 +30,7 @@ export default function Home() {
           <div className="hero-shade" />
         </div>
         <div className="hero-content container">
-          <p className="eyebrow light">THE BARBER EXPERIENCE</p>
+          <p className="eyebrow light">YOUR SAN ANTONIO BARBERSHOP</p>
           <h1>Look sharp.<br /><em>Feel different.</em></h1>
           <p className="hero-subtitle">{shop.tagline} Traditional craftsmanship, modern style, and attention to every detail.</p>
           <div className="hero-actions">
