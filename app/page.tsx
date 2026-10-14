@@ -53,13 +53,13 @@ export default function Home() {
       <section className="services-section" id="services">
         <div className="container">
           <p className="eyebrow">02 / THE SERVICES</p>
-          <div className="section-heading"><h2>The finishing <em>touch.</em></h2><p>Simple, timeless grooming. Ask about availability and pricing when you get in touch.</p></div>
+          <div className="section-heading"><h2>The finishing <em>touch.</em></h2><p>Explore Richard's services, prices, and estimated appointment times.</p></div>
           <div className="service-list">
             {shop.services.map((service, index) => (
               <div className="service-row" key={service.title}>
                 <span className="service-number">0{index + 1}</span>
-                <div><h3>{service.title}</h3><p>{service.detail}</p></div>
-                <span aria-hidden="true" className="service-arrow">↗</span>
+                <div><h3>{service.title}</h3><p>{service.duration}</p></div>
+                <span className="service-price">${service.price.toFixed(2)}</span>
               </div>
             ))}
           </div>
