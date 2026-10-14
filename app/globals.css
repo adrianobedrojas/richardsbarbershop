@@ -94,3 +94,8 @@ h2{font-size:clamp(48px,6vw,86px);margin:0}
 /* Service prices */
 .service-price{justify-self:end;font-weight:700;font-size:20px;white-space:nowrap}
 @media(max-width:520px){.service-row{grid-template-columns:28px minmax(0,1fr) auto}.service-price{font-size:16px}.service-row h3{font-size:22px}}
+
+/* Show brand artwork behind the introductory section without obscuring the headline. */
+.hero-logo-art{object-fit:contain!important;object-position:center;background:#171915}
+.hero-image{opacity:1}
+.hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.55) 48%,rgba(0,0,0,.22) 100%)}
