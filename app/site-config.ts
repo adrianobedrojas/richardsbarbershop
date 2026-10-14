@@ -7,14 +7,15 @@ export const shop = {
   address: "",
   city: "",
   phone: "", // Example: "+12105550123" (international format, no spaces).
+  // Richard Garcia's repeating schedule; confirm these are also the shop's public hours.
   hours: [
-    { day: "Monday", time: "Hours coming soon" },
-    { day: "Tuesday", time: "Hours coming soon" },
-    { day: "Wednesday", time: "Hours coming soon" },
-    { day: "Thursday", time: "Hours coming soon" },
-    { day: "Friday", time: "Hours coming soon" },
-    { day: "Saturday", time: "Hours coming soon" },
-    { day: "Sunday", time: "Hours coming soon" },
+    { day: "Monday", time: "10:00 AM – 3:00 PM" },
+    { day: "Tuesday", time: "9:00 AM – 5:00 PM" },
+    { day: "Wednesday", time: "10:00 AM – 5:00 PM" },
+    { day: "Thursday", time: "9:00 AM – 6:00 PM" },
+    { day: "Friday", time: "9:00 AM – 6:00 PM" },
+    { day: "Saturday", time: "8:00 AM – 1:00 PM" },
+    { day: "Sunday", time: "Closed" },
   ],
   services: [
     { title: "Signature Haircut", detail: "A fresh style tailored to you." },
