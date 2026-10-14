@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { shop } from "./site-config";
 
+const bookingUrl = "https://app.squareup.com/appointments/book/fbad4c9c-1bf3-4a36-b972-5e5f24c921aa/3R3ZA6VY8GN9Q/start";
 const phoneDigits = shop.phone.replace(/[^\d+]/g, "");
 const mapsQuery = [shop.address, shop.city].filter(Boolean).join(", ");
 const mapsUrl = mapsQuery ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}` : "";
@@ -18,7 +19,7 @@ export default function Home() {
           <a href="#gallery">Gallery</a>
           <a href="#visit">Visit</a>
         </nav>
-        <a className="header-cta" href="#contact">Contact us <span aria-hidden="true">↗</span></a>
+        <a className="header-cta" href={bookingUrl}>Book now <span aria-hidden="true">↗</span></a>
       </header>
 
       <section className="hero" id="home">
@@ -31,6 +32,7 @@ export default function Home() {
           <h1>Look sharp.<br /><em>Feel different.</em></h1>
           <p className="hero-subtitle">{shop.tagline} Traditional craftsmanship, modern style, and attention to every detail.</p>
           <div className="hero-actions">
+            <a className="button button-light" href={bookingUrl}>Book an appointment <span aria-hidden="true">↗</span></a>
             {mapsUrl ? <a className="button button-light" href={mapsUrl} target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a> : <a className="button button-light" href="#visit">Find our location <span aria-hidden="true">↗</span></a>}
             <a className="button button-outline" href="#gallery">See our work</a>
           </div>
@@ -111,8 +113,9 @@ export default function Home() {
       <section className="contact-section container" id="contact">
         <p className="eyebrow">05 / GET IN TOUCH</p>
         <h2>Ready for a<br /><em>fresh look?</em></h2>
-        <p>Have a question or want to check availability? Reach out.</p>
+        <p>Book your appointment online, or call or text us with any questions.</p>
         <div className="contact-actions">
+          <a className="button button-dark" href={bookingUrl}>Book an appointment ↗</a>
           {phoneUrl ? <a className="button button-dark" href={phoneUrl}>Call the shop ↗</a> : <span className="button button-muted">Phone number coming soon</span>}
           {smsUrl && <a className="button button-outline-dark" href={smsUrl}>Send a text ↗</a>}
         </div>
