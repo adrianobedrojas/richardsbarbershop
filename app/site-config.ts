@@ -4,8 +4,8 @@ export const shop = {
   tagline: "A sharp cut. A fresh start.",
   intro: "A neighborhood barbershop focused on clean cuts, careful details, and a relaxed experience. Stop by and leave looking your best.",
   barberName: "Richard",
-  address: "",
-  city: "",
+  address: "8494 Fredericksburg Rd",
+  city: "San Antonio, TX 78229",
   phone: "+12105502690", // Richard\'s business contact number.
   // Richard Garcia's repeating schedule; confirm these are also the shop's public hours.
   hours: [
@@ -25,7 +25,7 @@ export const shop = {
     { title: "Kids haircuts", price: 25, duration: "1 hr" },
     { title: "Men's Haircut", price: 35, duration: "30 mins" },
     { title: "Mens Hair Cut And Beard", price: 50, duration: "1 hr" },
-    { title: "Pedram", price: 100, duration: "2 hrs" },
+    { title: "Perm", price: 100, duration: "2 hrs" },
     { title: "Women's Haircut", price: 30, duration: "1 hr" },
   ],
   // Original photos and videos already uploaded to this GitHub repository.
