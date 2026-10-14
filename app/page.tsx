@@ -23,7 +23,7 @@ export default function Home() {
 
       <section className="hero" id="home">
         <div className="hero-image">
-          <Image src={shop.photos[0].src} alt={shop.photos[0].alt} fill priority sizes="100vw" className="cover-image" />
+          <Image src={shop.logo} alt="" fill priority sizes="100vw" className="cover-image hero-logo-art" />
           <div className="hero-shade" />
         </div>
         <div className="hero-content container">
