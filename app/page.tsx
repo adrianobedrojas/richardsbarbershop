@@ -68,16 +68,31 @@ export default function Home() {
 
       <section className="gallery-section container" id="gallery">
         <p className="eyebrow">03 / THE WORK</p>
-        <div className="section-heading"><h2>Fresh from<br />the <em>chair.</em></h2><p>A glimpse of the shop and the craft behind every cut.</p></div>
+        <div className="section-heading"><h2>Fresh from<br />the <em>chair.</em></h2><p>Explore the haircut portfolio, finished looks, and videos from the chair.</p></div>
         <div className="gallery-grid">
           {shop.photos.map((photo, index) => (
             <div className="gallery-photo" key={photo.src}>
               <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 720px) 100vw, 50vw" className="cover-image" />
-              <span className="gallery-count">0{index + 1} / 0{shop.photos.length}</span>
+              <span className="gallery-count">{index + 1} / {shop.photos.length}</span>
             </div>
           ))}
         </div>
-        <p className="gallery-caption">More photos coming soon.</p>
+        <div className="video-gallery-heading">
+          <p className="eyebrow">WATCH THE PROCESS</p>
+          <h3>Behind the <em>cut.</em></h3>
+          <p>See the work in motion.</p>
+        </div>
+        <div className="video-gallery">
+          {shop.videos.map((video) => (
+            <div className="video-card" key={video.src}>
+              <video controls preload="metadata" playsInline aria-label={video.title}>
+                <source src={video.src} type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <p>{video.title}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="visit-section" id="visit">
