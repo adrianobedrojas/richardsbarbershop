@@ -18,6 +18,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#membership">Membership</a>
           <a href="#gallery">Gallery</a>
           <a href="#visit">Visit</a>
         </nav>
@@ -40,6 +41,35 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-side-label">PRECISION IN EVERY CUT — RICHARD&apos;S BARBERSHOP</div>
+      </section>
+
+      <section className="membership-section" id="membership" aria-labelledby="membership-title">
+        <div className="container membership-grid">
+          <div className="membership-copy">
+            <p className="eyebrow light">THE FRESH CUT CLUB</p>
+            <h2 id="membership-title">Stay sharp.<br /><em>All month.</em></h2>
+            <p>Love a fresh cut? Enjoy unlimited eligible haircuts with Richard&apos;s monthly membership, subject to appointment availability and membership terms.</p>
+            <div className="membership-actions">
+              {smsUrl ? (
+                <a className="button button-light" href={smsUrl}>Ask about joining <span aria-hidden="true">↗</span></a>
+              ) : phoneUrl ? (
+                <a className="button button-light" href={phoneUrl}>Ask about joining <span aria-hidden="true">↗</span></a>
+              ) : (
+                <a className="button button-light" href="#contact">Ask about joining <span aria-hidden="true">↗</span></a>
+              )}
+              <a className="button button-outline" href={bookingUrl}>Book a haircut ↗</a>
+            </div>
+          </div>
+          <div className="membership-card">
+            <span className="membership-card-label">UNLIMITED HAIRCUTS MEMBERSHIP</span>
+            <div className="membership-price"><span>$80</span><span>/ month</span></div>
+            <div className="membership-rule" />
+            <p>Unlimited eligible haircuts</p>
+            <p>Monthly recurring membership</p>
+            <p>Appointments subject to availability</p>
+            <small>Ask the shop about included services, booking rules, and cancellation terms before enrolling.</small>
+          </div>
+        </div>
       </section>
 
       <section className="intro-section container" id="about">
