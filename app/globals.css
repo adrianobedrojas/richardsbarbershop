@@ -99,3 +99,21 @@ h2{font-size:clamp(48px,6vw,86px);margin:0}
 .hero-logo-art{object-fit:contain!important;object-position:center;background:#171915}
 .hero-image{opacity:1}
 .hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.55) 48%,rgba(0,0,0,.22) 100%)}
+
+/* Featured recurring haircut membership */
+.membership-section{background:#222720;color:#fff;padding:88px 0 96px;scroll-margin-top:25px}
+.membership-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:10%;align-items:center}
+.membership-copy h2{font-size:clamp(54px,6.7vw,96px)}
+.membership-copy>p:not(.eyebrow){max-width:560px;color:#d4d8ce;font-size:16px;line-height:1.8;margin:26px 0 0}
+.membership-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.membership-card{border:1px solid #d8ac7673;padding:42px 38px;background:linear-gradient(140deg,#343b31,#242820);box-shadow:16px 16px 0 #d8ac7616}
+.membership-card-label{font-size:11px;font-weight:700;letter-spacing:.18em;color:#e1ba8e}
+.membership-price{display:flex;align-items:baseline;gap:10px;margin:20px 0}
+.membership-price span:first-child{font-family:"Playfair Display",Georgia,serif;font-size:clamp(76px,8vw,112px);letter-spacing:-.06em;line-height:1}
+.membership-price span:last-child{color:#e5ddcd;font-size:16px}
+.membership-rule{height:1px;background:#ffffff45;margin:24px 0}
+.membership-card p{border-bottom:1px solid #ffffff20;padding:0 0 13px;margin:0 0 15px;font-size:14px;color:#f0eee6}
+.membership-card p::before{content:"✓";color:#e1ba8e;margin-right:12px}
+.membership-card small{display:block;line-height:1.65;color:#bfc4b8;margin-top:23px;font-size:11px}
+@media(max-width:800px){.membership-section{padding:75px 0}.membership-grid{grid-template-columns:1fr;gap:44px}.membership-card{max-width:540px}}
+@media(max-width:520px){.membership-copy h2{font-size:56px}.membership-card{padding:30px 24px}.membership-price span:first-child{font-size:80px}.membership-actions .button{width:100%}}
